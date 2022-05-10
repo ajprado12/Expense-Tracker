@@ -7,22 +7,30 @@
     <title>Expense Tracker</title>
   </head>
   <body>
-    <input type="date" name="calender" id="date"/>
-    <input type="number" name="cost" id="price" />
+    <input type="date" name="calender" id="date" placeholder="Date"/>
     <br />
     <br />
-    <input type="text" name="product" id="things" />
-    <input list="formsOfPayment" name="waysToPay" class="options" />
+    <input type="text" name="product" id="things" placeholder="What did you buy?" value=""/>
+    <br />
+    <br />
+    <input type="text" name="location" id="location" placeholder="What location?">
+    <br>
+    <br>
+    <input type="number" name="cost" id="price" placeholder="Cost"/>
+    <br />
+    <br />
+    <input list="formsOfPayment" name="waysToPay" class="options" placeholder="Method of Payment"/>
     <datalist id="formsOfPayment">
-      <option value="creditcard"></option>
-      <option value="cash"></option>
+      <option value="Cash"></option>
+      <option value="Credit Card"></option>
+      <option value="Debit Card"></option>
+      <option value="Bank Account"></option>
     </datalist>
-    <br>
-    <br>
-
-    <input type="submit" value="Add Expense" class="addExpense">
-    <br>
-    <br>
+    <br />
+    <br />
+    <input type="submit" value="Add Expense" class="addExpense" />
+    <br />
+    <br />
     <p id="myExpenses"></p>
   </body>
   <script src="script.js"></script>
