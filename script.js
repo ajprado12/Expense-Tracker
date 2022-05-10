@@ -1,5 +1,7 @@
 let addExpenseButton = document.querySelector(".addExpense");
 addExpenseButton.addEventListener("click", listExpenseaOnTable);
+addExpenseButton.style.backgroundColor ="navy";
+addExpenseButton.style.color ="white";
 var datePurchaseMade = document.getElementById("date");
 var whatWasBought = document.getElementById("things");
 var forHowMuch = document.getElementById("price");
@@ -18,6 +20,13 @@ function listExpenseaOnTable(event) {
 }
 function createMyEntry(text) {
   const expenses = document.createElement("li");
-  expenses.append(datePurchaseMade.value, whatWasBought.value,("@ " +  whereItWasBought.value), ("$ " + forHowMuch.value), howWasItPaid.waysToPay.value);
+  const deleteButton = document.createElement("button");
+  deleteButton.textContent = "X";
+  deleteButton.style.color = "white";
+  deleteButton.style.backgroundColor = "red";
+  deleteButton.addEventListener("click", function () {
+    expenses.remove();
+  });
+  expenses.append(datePurchaseMade.value, whatWasBought.value,(" @" +  whereItWasBought.value), (" $" + forHowMuch.value), howWasItPaid.waysToPay.value, deleteButton);
   return expenses;
 }

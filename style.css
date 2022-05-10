@@ -1,0 +1,17 @@
+#inputContainer {
+    margin: auto;
+    width: fit-content;
+    display: flex;
+}
+
+#myExpenses {
+    font-size: xx-large;
+    margin-top: 10%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 30px;
+    text-align: center;
+}
