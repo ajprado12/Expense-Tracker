@@ -1,33 +1,51 @@
+body {
+  background-color: rgb(127, 186, 186);
+}
 #inputContainer {
   margin: auto;
   width: fit-content;
   display: flex;
+  box-shadow: 2px 2px;
 }
-
 #myExpenses {
   font-size: xx-large;
   margin-top: 10%;
   text-align: center;
 }
-
 h1 {
   font-size: 100px;
   margin: 30px;
   text-align: center;
+  text-shadow: 1px 7px white;
 }
-
 #header {
   border: 3px solid;
   border-collapse: collapse;
 }
-#inputTable {
-  border: 3px solid;
-  border-collapse: collapse;
-}
-
 #myTable {
   margin: auto;
   width: fit-content;
-  border: 1px solid;
+  border: 3px solid;
   border-collapse: collapse;
+  background-color: white;
+  box-shadow: 5px 5px;
+}
+#inputTable {
+  border: 3px solid;
+  border-spacing: 10px;
+  border-collapse: collapse;
+}
+th {
+  padding: 25px;
+  text-align: center;
+  font-size: large;
+  border: 10px;
+  background-color: coral;
+}
+tbody {
+  padding: 10px;
+  text-align: center;
+  border-style: inherit;
+  font-weight: bolder;
+  font-size: large;
 }

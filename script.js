@@ -24,6 +24,7 @@ function createMyEntry(text) {
   deleteButton.textContent = "X";
   deleteButton.style.color = "white";
   deleteButton.style.backgroundColor = "red";
+  deleteButton.style.boxShadow = "2px 5px black";
   deleteButton.addEventListener("click", function () {
     row.remove();
   });
@@ -33,13 +34,11 @@ function createMyEntry(text) {
   var cell3 = row.insertCell(2);
   var cell4 = row.insertCell(3);
   var cell5 = row.insertCell(4);
-  var cell6 = row.insertCell(5);
   cell1.innerHTML = datePurchaseMade.value;
   cell2.innerHTML = whatWasBought.value;
   cell3.innerHTML = "@ " + whereItWasBought.value;
   cell4.innerHTML = "$ " + forHowMuch.value;
   cell5.innerHTML = howWasItPaid.waysToPay.value;
-  // cell6.innerHTML = (deleteButton.value)
   row.appendChild(deleteButton);
   return table;
 }
