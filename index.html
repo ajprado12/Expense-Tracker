@@ -7,36 +7,65 @@
     <title>Expense Tracker</title>
   </head>
   <body>
-      <h1>Expenses</h1>
-      <div id="inputContainer">
-    <input type="date" name="calender" id="date" placeholder="Date"/>
-    <br />
-    <br />
-    <input type="text" name="product" id="things" placeholder="What did you buy?" value=""/>
-    <br />
-    <br />
-    <input type="text" name="location" id="location" placeholder="What location?">
-    <br>
-    <br>
-    <input type="number" name="cost" id="price" placeholder="Cost"/>
-    <br />
-    <br />
-    <input list="formsOfPayment" name="waysToPay" class="options" placeholder="Method of Payment"/>
-    <datalist id="formsOfPayment">
-      <option value="Cash"></option>
-      <option value="Credit Card"></option>
-      <option value="Debit Card"></option>
-      <option value="Bank Account"></option>
-    </datalist>
-    <br />
-    <br />
-    <input type="submit" value="Add Expense" class="addExpense" />
-    <br />
-    <br />
-</div>
-<div id="expenseList">
-    <p id="myExpenses"></p>
-</div>
+    <h1>Expenses</h1>
+    <div id="inputContainer">
+      <input type="date" name="calender" id="date" placeholder="Date" />
+      <br />
+      <br />
+      <input
+        type="text"
+        name="product"
+        id="things"
+        placeholder="What did you buy?"
+        value=""
+      />
+      <br />
+      <br />
+      <input
+        type="text"
+        name="location"
+        id="location"
+        placeholder="What location?"
+      />
+      <br />
+      <br />
+      <input type="number" name="cost" id="price" placeholder="Cost" />
+      <br />
+      <br />
+      <input
+        list="forms"
+        name="waysToPay"
+        class="options"
+        placeholder="Method of Payment"
+      />
+      <datalist id="forms">
+        <option value="Cash"></option>
+        <option value="Credit Card"></option>
+        <option value="Debit Card"></option>
+        <option value="Bank Account"></option>
+      </datalist>
+      <br />
+      <br />
+      <input type="submit" value="Add Expense" class="addExpense" />
+      <br />
+      <br />
+    </div>
+    <div id="expenseContainer">
+      <table id="myTable">
+        <thead>
+          <tr id="header">
+            <th>Date</th>
+            <th>Description</th>
+            <th>Location</th>
+            <th>Cost</th>
+            <th>Method</th>
+          </tr>
+          <br />
+          <br />
+        </thead>
+        <tbody id="inputTable"></tbody>
+      </table>
+    </div>
   </body>
   <script src="script.js"></script>
 </html>
