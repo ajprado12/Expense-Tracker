@@ -2,7 +2,7 @@
 
 Simple expense tracker created with <strong>HTML, CSS, and Javascript.</strong>
 
-Know where your money is going by [tracking it.]()
+Know where your money is going by [tracking it.](https://ajprado12.github.io/Expense-Tracker/)
 ![expense-tracker](https://user-images.githubusercontent.com/102049335/167992094-d6598202-e99f-40ca-bdf4-ff4f4300ec90.jpg)
 
 
